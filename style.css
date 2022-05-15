@@ -1,0 +1,181 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2f2c43;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    overflow-y: scroll;
+  }
+}
+.wrapper .description {
+  width: 40%;
+  margin: 300px auto;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .wrapper .description {
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 2rem;
+    text-align: center;
+  }
+}
+.wrapper .description p {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.wrapper .description .social span {
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+.vector {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  margin: auto;
+}
+.vector .light {
+  position: relative;
+  height: 13rem;
+  width: 0.4rem;
+  background: #6c3666;
+  margin-left: 50%;
+}
+.vector .light .light-on {
+  position: absolute;
+  top: 14rem;
+  width: 110px;
+  left: -204px;
+  border-bottom: 370px solid white;
+  opacity: 0.3;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  height: 0;
+  z-index: 11;
+  transition: all 1s linear;
+}
+.vector .light .bolb {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #f240a3;
+  border-radius: 50%;
+  box-shadow: inset -22px -4px 3px 0px #c12f81;
+  z-index: 9;
+  top: 204px;
+  left: -21px;
+}
+.vector .light::after {
+  position: absolute;
+  left: -48%;
+  top: 10rem;
+  transform: translate(-48%, 0rem);
+  content: "";
+  width: 140px;
+  height: 70px;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  background: #6c3666;
+  z-index: 15;
+}
+.vector .desktop {
+  position: absolute;
+  top: 11rem;
+  left: 40%;
+  width: 300px;
+  transform: translate(-40%, 11rem);
+  height: 170px;
+  background: #fff;
+  border: 10px solid #544e77;
+  border-radius: 5px;
+  z-index: 10;
+}
+.vector .desktop .vs-code {
+  position: absolute;
+  width: 230px;
+  left: 34px;
+  height: 120px;
+  top: 16px;
+  border-radius: 5px;
+  background: #544e77;
+}
+.vector .desktop .vs-code pre {
+  font-size: 9px;
+  color: #d2cfd6;
+  line-break: 8px;
+  line-height: 10px;
+}
+.vector .desktop::before {
+  position: absolute;
+  bottom: -40px;
+  left: -9px;
+  content: "";
+  width: 320px;
+  height: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #ffffff;
+  z-index: 0;
+}
+.vector .desktop::after {
+  position: absolute;
+  border-bottom: 40px solid #544e77;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  height: 0;
+  width: 125px;
+  left: 30%;
+  bottom: -5rem;
+  z-index: 9;
+  content: "";
+}
+.vector .desk {
+  position: absolute;
+  width: 600px;
+  height: 2px;
+  left: 40%;
+  top: 19.9rem;
+  transform: translate(-40%, 18.5rem);
+  background-color: #fff;
+  border-radius: 50px;
+}
+@media (max-width: 768px) {
+  .vector .desk {
+    width: 380px;
+    left: 35%;
+  }
+}
+.vector .desk::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 20px;
+  top: 0rem;
+  background-color: #fffdff;
+  border-radius: 50px;
+  left: 102%;
+}
+.vector .desk::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 35px;
+  top: 0rem;
+  background-color: #fffdff;
+  border-radius: 50px;
+  left: -10%;
+}
